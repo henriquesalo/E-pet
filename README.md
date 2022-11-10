@@ -12,5 +12,6 @@
   - CSS 
   - GIT E GITHUB 
   - JAVASCRIPT 
+  - SQL
 
 ##
