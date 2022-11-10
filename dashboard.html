@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <link rel="icon" href="assets\images\favicon.png" />
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <!-- LOGO CANTO ESQUERDO -->
+    <div class="div_logo">
+      <a href="index.html"
+        ><img src="assets\images\logo-preta.png" id="logo" alt=""
+      /></a>
+    </div>
+    <!-- FIM LOGO CANTO ESQUERDO -->
+    <!-- INICIO DASHBOARD -->
+    <div class="dashboard">
+      <!-- BOTÕES DE CIMA -->
+      <div class="top-buttons">
+        <button id="cad_fun">
+          <img
+            src="assets\images\icon-cad-funcionario.png"
+            class="icon-buttons"
+          /><b>Cadastro de Funcionários</b>
+        </button>
+        <button id="cad_cli">
+          <img
+            src="assets\images\icon-cad-cliente.png"
+            class="icon-buttons"
+          /><b>Cadastro de Clientes</b>
+        </button>
+        <button id="cad_ser">
+          <img
+            src="assets\images\icon-cad-servico.png"
+            class="icon-buttons"
+          /><b>Cadastro de Serviços</b>
+        </button>
+        <button id="cad_pet">
+          <img src="assets\images\icon-pet.png" class="icon-buttons" /><b
+            >Cadastro de PET</b
+          >
+        </button>
+      </div>
+      <!-- FIM BOTÕES DE CIMA -->
+      <!-- INICIO BOTÕES DE BAIXO -->
+      <div class="middle-buttons">
+        <button id="fun">
+          <img
+            src="assets\images\icon-funcionario.png"
+            class="icon-buttons"
+          /><b>Funcionários</b>
+        </button>
+        <button id="cli">
+          <img src="assets\images\icon-cliente.png" class="icon-buttons" /><b
+            >Clientes</b
+          >
+        </button>
+        <button id="ser">
+          <img src="assets\images\icon-servico.png" class="icon-buttons" /><b
+            >Serviços</b
+          >
+        </button>
+        <button id="estoque">
+          <img src="assets\images\icon-estoque.png" class="icon-buttons" /><b
+            >Gerenciar Estoque</b
+          >
+        </button>
+      </div>
+    </div>
+    <!-- FIM BOTÕES DE BAIXO -->
+    <!-- MODAIS -->
+    <!-- MODAL CADASTRO DE FUNCIONARIOS -->
+    <div class="modal-container-cad-fun" id="modal-container-cad-fun">
+      <div class="modal-cad-fun">
+        <div class="modal-titulo">
+          <h3>Cadastro de Funcionários</h3>
+        </div>
+
+        <form>
+          <div class="campo1">
+            <label for="">Nome:</label>
+            <input type="text" placeholder="Guilherme Vieira Oliveira" />
+          </div>
+
+          <div class="campo">
+            <label for="">E-mail:</label>
+            <input type="email" placeholder="emailteste@gmail.com"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Data de Nascimento:</label>
+            <input type="date" placeholder="14/01/2004"/>
+          </div>
+
+          <div class="campo">
+            <label for="">CPF:</label>
+            <input type="cpf" placeholder="055.911.111-81"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Telefone:</label>
+            <input type="telefone" placeholder="(61)9 9991-3418"/>
+          </div>
+
+          <div class="buttons">
+            <button class="modal-bnt-can">Cancelar</button>
+            <button class="modal-bnt-cad">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FIM MODAL CADASTRO DE FUNCIONARIOS -->
+    <!-- INICIO MODAL CADASTRO DE CLIENTES -->
+    <div class="modal-container-cad-cli" id="modal-container-cad-cli">
+      <div class="modal-cad-cli">
+        <div class="modal-titulo">
+          <h3>Cadastro de Clientes</h3>
+        </div>
+
+        <form>
+          <div class="campo1">
+            <label for="">Nome:</label>
+            <input type="text" placeholder="Henrique Salomão" />
+          </div>
+
+          <div class="campo">
+            <label for="">E-mail:</label>
+            <input type="email" placeholder="emailteste@gmail.com"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Data de Nascimento:</label>
+            <input type="date" name="" id="" />
+          </div>
+
+          <div class="campo">
+            <label for="">CPF:</label>
+            <input type="cpf" placeholder="055.911.111-81" />
+          </div>
+
+          <div class="campo">
+            <label for="">Telefone:</label>
+            <input type="telefone" placeholder="(61) 9 99913418"/>
+          </div>
+
+          <div class="buttons">
+            <button class="modal-bnt-can">Cancelar</button>
+            <button class="modal-bnt-cad">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FIM MODAL CADASTRO DE CLIENTES -->
+    <!-- INICIO MODAL CADASTRO DE SERVIÇOS -->
+    <div class="modal-container-cad-ser" id="modal-container-cad-ser">
+      <div class="modal-cad-ser" style="height: 50%">
+        <div class="modal-titulo">
+          <h3>Cadastro de Serviços</h3>
+        </div>
+
+        <form>
+          <div class="campo1">
+            <label for="">Nome do Cliente:</label>
+            <input type="text" placeholder="Eduardo Antero" />
+          </div>
+
+          <div class="campo">
+            <label for="">Telefone:</label>
+            <input type="telefone" placeholder="4002 8922"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Tipo de serviço:</label>
+            <br />
+            <input type="checkbox" value="Banho" />
+
+            <label for="vehicle1"> Banho </label>
+            <br />
+            <input type="checkbox" value="Tosa" />
+
+            <label for="vehicle1"> Tosa </label>
+            <br />
+            <input type="checkbox" value="Consulta" />
+
+            <label for="vehicle1"> Consulta </label>
+            <br />
+          </div>
+
+          <div class="campo">
+            <label for="">Data de entrada:</label>
+            <input type="date" />
+          </div>
+
+          <div class="campo">
+            <label for="">Previsão de saída:</label>
+            <input type="date" />
+          </div>
+
+          <div class="buttons">
+            <button class="modal-bnt-can">Cancelar</button>
+            <button class="modal-bnt-cad">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FIM MODAL CADASTRO DE SERVIÇOS -->
+    <!-- INICIO MODAL CADASTRO DE PETS -->
+    <div class="modal-container-cad-pet" id="modal-container-cad-pet">
+      <div class="modal-cad-pet" style="height: 50%">
+        <div class="modal-titulo">
+          <h3>Cadastro de PET</h3>
+        </div>
+
+        <form>
+          <div class="campo1">
+            <label for="">Nome do PET:</label>
+            <input type="text" placeholder="Henrique Salomão"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Raça:</label>
+            <input type="text" placeholder="Akita"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Especie:</label>
+            <input type="text" placeholder="Cachorro" />
+          </div>
+
+          <div class="campo">
+            <label for="">Peso em KG:</label>
+            <input type="number" placeholder="382kg"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Pelagem:</label>
+            <input type="text" placeholder="Caramelo e Branco"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Idade:</label>
+            <input type="date" placeholder="200 anos " />
+          </div>
+
+          <div class="campo">
+            <label for="">Nome do dono:</label>
+            <input type="text" placeholder="Clebin da RL" />
+          </div>
+
+          <div class="buttons">
+            <button class="modal-bnt-can">Cancelar</button>
+            <button class="modal-bnt-cad">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FIM MODAL CADASTRO DE PETS -->
+    <!-- INICIO MODAL DE FUNCIONARIOS-->
+    <div class="modal-container-fun" id="modal-container-fun">
+      <div class="modal-fun">
+        <div class="modal-titulo">
+          <h3>Funcionários</h3>
+        </div>
+
+        <form>
+          <div class="campo1">
+            <label for="">Nome:</label>
+            <input type="text" placeholder="Guilherme Vieira Oliveira"/>
+          </div>
+
+          <div class="campo">
+            <label for="">E-mail:</label>
+            <input type="email" placeholder="emailteste@gmail.com"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Data de Nascimento:</label>
+            <input type="date" name="" id="" />
+          </div>
+
+          <div class="campo">
+            <label for="">CPF:</label>
+            <input type="cpf" placeholder="321.312.454-90" />
+          </div>
+
+          <div class="campo">
+            <label for="">Telefone:</label>
+            <input type="telefone" placeholder="(61) 9 3123-3123"/>
+          </div>
+
+          <div class="buttons">
+            <button class="modal-bnt-can">Cancelar</button>
+            <button class="modal-bnt-cad">Buscar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FIM MODAL DE FUNCIONARIOS  -->
+    <!-- INICIO MODAL DE CLIENTES-->
+    <div class="modal-container-cli" id="modal-container-cli">
+      <div class="modal-cli">
+        <div class="modal-titulo">
+          <h3>Clientes</h3>
+        </div>
+
+        <form>
+          <div class="campo1">
+            <label for="">Nome:</label>
+            <input type="text" placeholder="João Kleber"/>
+          </div>
+
+          <div class="campo">
+            <label for="">E-mail:</label>
+            <input type="email" placeholder="emailteste@gmail.com"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Data de Nascimento:</label>
+            <input type="date" name="" id="" />
+          </div>
+
+          <div class="campo">
+            <label for="">CPF:</label>
+            <input type="cpf" placeholder="431.213.543-12"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Telefone:</label>
+            <input type="telefone" placeholder="(61) 9 3213-4124" />
+          </div>
+
+          <div class="buttons">
+            <button class="modal-bnt-can">Cancelar</button>
+            <button class="modal-bnt-cad">Buscar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FIM MODAL DE CLIENTES  -->
+    <!-- INICIO MODAL DE SERVIÇOS-->
+    <div class="modal-container-ser" id="modal-container-ser">
+      <div class="modal-ser" style="height: 50%">
+        <div class="modal-titulo">
+          <h3>Serviços</h3>
+        </div>
+
+        <form>
+          <div class="campo1">
+            <label for="">Nome do Cliente:</label>
+            <input type="text" placeholder="Eduardo Antero" />
+          </div>
+
+          <div class="campo">
+            <label for="">Telefone:</label>
+            <input type="telefone" placeholder="(61)9 3214-4214"/>
+          </div>
+
+          <div class="campo">
+            <label for="">Tipo de serviço:</label>
+            <br />
+            <input type="checkbox" value="Banho" />
+
+            <label for="vehicle1"> Banho </label>
+            <br />
+            <input type="checkbox" value="Tosa" />
+
+            <label for="vehicle1"> Tosa </label>
+            <br />
+            <input type="checkbox" value="Consulta" />
+
+            <label for="vehicle1"> Consulta </label>
+            <br />
+          </div>
+
+          <div class="campo">
+            <label for="">Data de entrada:</label>
+            <input type="date" />
+          </div>
+
+          <div class="campo">
+            <label for="">Previsão de saída:</label>
+            <input type="date" />
+          </div>
+
+          <div class="buttons">
+            <button class="modal-bnt-can">Cancelar</button>
+            <button class="modal-bnt-cad">Buscar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FIM MODAL DE SERVIÇOS  -->
+    <!-- INICIO MODAL DE ESTOQUE-->
+    <div class="modal-container-estoque" id="modal-container-estoque">
+      <div class="modal-estoque">
+        <h3>FUTURA ATUALIZAÇÃO</h3>
+      </div>
+    </div>
+    <script src="assets\js\dashboard.js"></script>
+  </body>
+</html>

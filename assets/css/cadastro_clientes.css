@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:#f9942a;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12%;
+    
+}
+.campo1{
+    margin-top: 10px;
+}
+.campo,.campo1{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 12px 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fieldset{
+    width: 20vw;
+    height: auto;
+    border-radius: 15px;
+    background-color: #e7e7e7;
+    border: 1px solid rgba(0, 0, 0, 0.582);
+}
+
+#bnt_cad{
+    margin-left: 10%;
+    border-radius: 15px;
+    width: 30%;
+    height: 3.5vh;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+#bnt_can{
+    margin-left: 15% ;
+    border-radius: 15px;
+    width: 30%;
+    height: 3.5vh;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+input{
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+#bnt_cad:hover{
+    background-color: lightgrey;
+}

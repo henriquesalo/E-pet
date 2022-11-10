@@ -1,0 +1,104 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F9942A;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.436);
+    border-radius: 15px;
+    width: 19vw;
+    height: 50vh;
+    min-height: 300px;
+    min-width: 200px;
+}
+
+#logo {
+    position: relative;
+    margin-bottom: 10%;
+    width: 65%;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7%;
+}
+
+#username,
+#password,
+#cpf,
+#endereco,
+#email {
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#username:hover,
+#password:hover {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#username::placeholder,
+#password::placeholder,
+#cpf::placeholder,
+#email::placeholder,
+#endereco::placeholder {
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#bnt_login {
+    width: 50%;
+    height: 25px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#bnt_login:hover {
+    background-color: rgba(255, 255, 255, 0.705);
+    border: 1px solid rgba(0, 0, 0, 0.211);
+}
+
+#forgot_pass {
+    text-decoration: none;
+    color: rgba(0,0,0, 0.8);
+}
+
+#forgot_pass:hover{
+    color: rgba(112, 109, 109, 0.8);
+}
